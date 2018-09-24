@@ -1,0 +1,312 @@
+@import url(bootstrap.css);
+@import url(jquery.bxslider.css);
+@import url(../../css/animate.css);
+@import url(../../css/slicknav.css);
+
+a{
+  color: #2a275e;
+  font-size: 14px;
+}
+
+a:hover{
+  text-decoration: none;
+  color: #27214f;
+}
+
+.clearer{
+  float: left;
+  width: 100%;
+  margin: 20px 0;
+}
+
+header,content,section,footer{
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+header .clearer{
+  transition: margin 2s;
+}
+
+header .clearer.reduce-margin{
+  margin: 5px 0
+}
+
+.header-freeze{
+  position: fixed;
+}
+
+.logo img{
+  width: 180px;
+}
+
+ul.menu{
+  margin: 10px 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+}
+
+ul.menu li{
+  position: relative;
+  display: inline-block;
+}
+
+ul.menu li a{
+  display: block;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #2a275e;
+}
+
+ul.menu li a:hover{
+  text-decoration: : none;
+}
+
+.client{
+  background-color: #f4f4f4;
+}
+
+.bg-about,.bg-services{
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+}
+
+.main-slider .carousel-inner{
+  /* position: fixed;
+  left: 0;
+  top: 0; */
+}
+
+.main-slider .carousel-caption {
+  color: #363634;
+  bottom: 50%;
+  transform: translateY(50%);
+  text-align: left;
+}
+
+.main-slider .carousel-caption h1{
+  font-size: 4.5rem;
+}
+
+.main-slider .carousel-caption h6{
+  color: #f9b232;
+}
+
+.main-slider .carousel-caption h6::before{
+  content: '';
+  width: 20%;
+  display: inline-block;
+  border-bottom: solid 2px #f9b232;
+  margin: 0 5px 4px 0;
+}
+
+.aboutOnScroll,.serviceOnScroll,.projectOnScroll{
+  visibility: hidden;
+}
+
+.about-home{
+  background: #f4f4f4;
+  height: 100%;
+}
+
+.about-box{
+  background: rgba(255,255,255,0.7);
+  border-radius: 20px
+}
+
+.about-box .figure-caption{
+  padding: 20px;
+}
+
+.section-title{
+  margin-bottom: 20px;
+}
+
+.section-title h1{
+  display: inline-block;
+  background: #e40613;
+  padding: 5px 100px;
+  border-radius: 30px;
+  color: #f8b236;
+  margin: 0;
+}
+
+.cellpadding{
+  padding: 80px 0;
+}
+
+section.services{
+  background-image: url(../../images/bg2-01.jpg);
+}
+
+section.services ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+section.services ul li{
+  margin-bottom: 20px;
+}
+
+section.services ul li i{
+  font-size: 10px;
+  margin-right: 10px;
+}
+
+section.projects .figure .figure-caption h1{
+  font-size: 4.5rem;
+  color: #e40613;
+  font-weight: bold;
+}
+
+.our-program figure .figure-caption{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #262453;
+  color: #fff;
+  padding: 10px;
+}
+
+.bx-pager{
+  margin-top: 15px;
+}
+
+.bx-pager a{
+  display: inline-block;
+  width: 24.55%
+}
+
+.bx-pager a img{
+  max-width: 100%;
+}
+
+.testimony-slider .media img{
+  width: 200px
+}
+
+.btn-primary{
+  background-color: #262453;
+  border-color: #1b1a40
+}
+
+footer{
+  background: url(../../images/bg3-01.jpg)no-repeat 0 0;
+  background-size: cover;
+  color: #fff;
+}
+
+footer ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer li a{
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 10px
+}
+
+footer li a:hover{
+  color: red;
+}
+
+footer .copyright{
+  background-color: #e40613;
+}
+
+footer .form-control{
+  background: none;
+  border: 0;
+  border-bottom: solid thin #ccc;
+  color: #fff;
+}
+
+footer .form-control:focus{
+  background: none;
+  color: #fff;
+}
+
+.parallax{
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+	position:relative;
+	overflow:hidden;
+}
+
+.parallax-slider{
+  height: 100%;
+}
+
+.slicknav_menu{
+  background: #fff;
+  display: none;
+}
+
+.slicknav_nav{
+  background: #333;
+}
+
+.slicknav_btn{
+  margin: 5px 5px 18px;
+}
+
+@media screen and (max-width:768px){
+  header{
+    position: relative;
+  }
+
+  header .logo{
+    position: absolute;
+    left: 20px;
+    top: 0;
+  }
+
+  header .logo img{
+    width: auto;
+    height: 46px;
+  }
+
+  .slicknav_menu{
+    display: block;
+  }
+
+  .aboutOnScroll,.serviceOnScroll,.projectOnScroll{
+    visibility: visible;
+  }
+
+  .text-md-center{
+    text-align: center;
+  }
+
+  .about-home .mr-4{
+    margin: 0 !important;
+  }
+
+  .section-title h1{
+    padding: 5px 50px;
+    font-size: 24px
+  }
+}
+
+@media screen and (max-width:320px) {
+  .about-home .col-md-12 img{
+    width: 100px;
+  }
+}
